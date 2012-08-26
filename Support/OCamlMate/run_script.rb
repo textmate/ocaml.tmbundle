@@ -102,7 +102,7 @@ STDOUT.sync = true
 script = UserScript.new
 map = {
   'SCRIPT_NAME'       => script.display_name,
-  'BUNDLE_SUPPORT'    => "tm-file://#{ENV['TM_BUNDLE_SUPPORT'].gsub(/ /, '%20')}",
+  'BUNDLE_SUPPORT'    => "file://#{ENV['TM_BUNDLE_SUPPORT'].gsub(/ /, '%20')}",
 }
 puts DATA.read.gsub(/\$\{([^}]+)\}/) { |m| map[$1] }
 
