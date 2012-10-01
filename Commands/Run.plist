@@ -11,8 +11,6 @@
 TO_OCAML=${TM_OCAML:=ocamlc}
 TMPDIR=${TMPDIR:=/tmp}
 
-require_cmd "$TO_OCAML"
-
 # get a tempfile and fill it with the contents of our file
 SRCFILE=`/usr/bin/mktemp $TMPDIR/ocamlXXXXXX` || exit 1
 mv "$SRCFILE" "$SRCFILE".ml
@@ -47,6 +45,20 @@ rm -f "$DSTFILE"
 	<string>html</string>
 	<key>outputLocation</key>
 	<string>newWindow</string>
+    <key>requiredCommands</key>
+    <array>
+    	<dict>
+    		<key>command</key>
+    		<string>ocamlc</string>
+    		<key>locations</key>
+    		<array>
+    			<string>/opt/local/bin/ocamlc</string>
+    			<string>/usr/local/bin/ocamlc</string>
+    		</array>
+    		<key>variable</key>
+    		<string>TM_OCAML</string>
+    	</dict>
+    </array>
 	<key>scope</key>
 	<string>source.ocaml</string>
 	<key>semanticClass</key>
