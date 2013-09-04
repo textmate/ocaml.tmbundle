@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>Insert Spaces in Comment</string>
 	<key>scope</key>
-	<string>comment.block.empty.ocaml</string>
+	<string>comment.block.ocaml &amp; (L:punctuation.definition.comment.begin.ocaml &amp; R:punctuation.definition.comment.end.ocaml)</string>
 	<key>uuid</key>
 	<string>17EB5600-2B1B-4EAF-9723-6B7CAE3505B0</string>
 </dict>
