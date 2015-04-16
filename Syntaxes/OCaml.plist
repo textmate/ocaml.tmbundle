@@ -1263,6 +1263,16 @@
 						</dict>
 					</array>
 				</dict>
+			</array>
+		</dict>
+		<key>comments_inner</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
 				<dict>
 					<key>begin</key>
 					<string>(?=[^\\])(")</string>
@@ -1784,7 +1794,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#comments</string>
+					<string>#comments_inner</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -2055,7 +2065,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#comments</string>
+					<string>#comments_inner</string>
 				</dict>
 				<dict>
 					<key>begin</key>
