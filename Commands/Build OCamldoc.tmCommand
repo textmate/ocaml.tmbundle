@@ -17,7 +17,7 @@ open /tmp/index.html</string>
 	<key>keyEquivalent</key>
 	<string>^~@d</string>
 	<key>name</key>
-	<string>Build Ocamldoc</string>
+	<string>Build OCamldoc</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
