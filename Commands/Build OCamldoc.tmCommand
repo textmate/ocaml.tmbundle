@@ -15,7 +15,7 @@ open /tmp/index.html</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^~@d</string>
+	<string>^h</string>
 	<key>name</key>
 	<string>Build OCamldoc</string>
 	<key>outputCaret</key>
