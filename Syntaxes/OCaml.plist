@@ -1275,7 +1275,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?=[^\\])(")</string>
+					<string>(")(?:(?&lt;!\x27")(?&lt;!\x27\x5c")|(?!\x27))</string>
 					<key>end</key>
 					<string>"</string>
 					<key>name</key>
