@@ -216,7 +216,7 @@
 			<key>begin</key>
 			<string>^\s*(?=type\s)</string>
 			<key>end</key>
-			<string>\b(?=let|end|val)|^\s*$</string>
+			<string>\b(?=let|end|val!?)|^\s*$</string>
 			<key>name</key>
 			<string>meta.type-definition-group.ocaml</string>
 			<key>patterns</key>
@@ -243,7 +243,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=\b(type|and|let|end|val)\b)|(?=^\s*$)</string>
+					<string>(?=\b(type|and|let|end|val!?)\b)|(?=^\s*$)</string>
 					<key>name</key>
 					<string>meta.type-definition.ocaml</string>
 					<key>patterns</key>
@@ -557,7 +557,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\b(method)\s+(virtual\s+)?(private\s+)?([a-z_][a-zA-Z0-9'_]*)</string>
+					<string>\b(method!?)\s+(virtual\s+)?(private\s+)?([a-z_][a-zA-Z0-9'_]*)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1170,7 +1170,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(as|assert|class|constraint|exception|functor|in|include|inherit|initializer|lazy|let|mod|module|mutable|new|object|open|private|rec|sig|struct|type|virtual)\b</string>
+			<string>\b(as|assert|class|constraint|exception|functor|in|include|inherit!?|initializer|lazy|let|mod|module|mutable|new|object|open|private|rec|sig|struct|type|virtual)\b</string>
 			<key>name</key>
 			<string>keyword.other.ocaml</string>
 		</dict>
@@ -1498,7 +1498,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(val)\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
+					<string>(val!?)\s+([a-z_][a-zA-Z0-9_']*)\s*(:)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1518,7 +1518,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=\b(type|val|external|class|module|end)\b)|^\s*$</string>
+					<string>(?=\b(type|val!?|external|class|module|end)\b)|^\s*$</string>
 					<key>name</key>
 					<string>meta.module.signature.val.ocaml</string>
 					<key>patterns</key>
@@ -1608,7 +1608,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=\b(type|val|external|class|module|let|end)\b)|^\s*$</string>
+					<string>(?=\b(type|val!?|external|class|module|let|end)\b)|^\s*$</string>
 					<key>name</key>
 					<string>meta.module.signature.external.ocaml</string>
 					<key>patterns</key>
