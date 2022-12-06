@@ -434,7 +434,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(\{)</string>
+			<string>(\{(?![a-z_]*\|))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1780,6 +1780,14 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>{([a-z_]*)\|</string>
+					<key>end</key>
+					<string>\|\1}</string>
+					<key>name</key>
+					<string>string.quoted.other.ocaml</string>
+				</dict>
 			</array>
 		</dict>
 		<key>typedefs</key>
@@ -2125,7 +2133,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(\{)</string>
+					<string>(\{(?![a-z_]*\|))</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
